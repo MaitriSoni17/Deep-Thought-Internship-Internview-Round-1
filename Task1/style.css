@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-button.bg {
+    background-color: #FEFFC0 !important;
+}
+
+.sidebar {
+    width: 10%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.sidebar-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-header span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar-content {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+}
+
+.journey-board {
+    overflow: hidden;
+}
+
+.journey-board {
+    padding: 20px;
+}
+
+.journey-board h2 {
+    margin-top: 0;
+}
+
+.journey-board ul {
+    padding: 0;
+    margin: 0;
+}
+
+.expanded {
+    width: 300px;
+}
+
+.expanded .sidebar-content {
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar-header i {
+    cursor: pointer;
+}
+
+.sidebar-header i.fas.fa-angle-double-right {
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.sidebar.expanded .sidebar-header i.bi.bi-arrow-right-circle-fill {
+    transform: rotate(180deg);
+}
+
+.sidebar-header #journey-board-text {
+    display: none;
+}
+
+.sidebar.expanded .sidebar-header #journey-board-text {
+    display: inline-block;
+}
+
+#sidebar-closed-badge {
+    display: inline-block;
+}
+
+.sidebar.expanded #sidebar-closed-badge {
+    display: none;
+}
