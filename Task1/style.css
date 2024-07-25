@@ -7,6 +7,18 @@
     background-color: #FEFFC0 !important;
 }
 
+#thread1{
+    width: 200px !important;
+}
+
+#thread2{
+    width: 270px !important;
+}
+
+#summary{
+    width: 485px !important;
+}
+
 .sidebar {
     width: 10%;
     background-color: #fff;
